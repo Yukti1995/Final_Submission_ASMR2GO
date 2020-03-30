@@ -1,1 +1,36 @@
+---ssh to raspberry pi
+
+sudo ssh pi@10.0.0.196
+
+
+---Building crosstool
+
+cd tools/arm-bcm2708
+cd gcc-linaro-arm-linux-gnueabihg-raspbian-x64/bin/
+ls
+pwd 
+/home/yukti/Downloads/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin
+
+export PATH=$PATH:
+/home/yukti/Downloads/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin
+
+echo $PATH
+
+cd Documents/
+gcc hello.c -o hello
+./hello
+file hello 
+arm-linux-gnueabihf-gc
+arm-linux-gnueabihf-gcc hello.c -o hello
+file hello
+./hello
+
+
+
+scp hello pi@10.0.0.196:~
+
+ls
+sudo chmod 777 hello
+./hello
+
 
