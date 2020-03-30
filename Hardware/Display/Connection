@@ -1,1 +1,5 @@
-
+  
+We are using a starto raspberry pi 3b+ setup with a touch screen of 3.5 inch along with a black colored case for better usability. 
+It supports the screen as well as the HDMI port simultaneously. 
+It comes with the functionality of good cooling.
+LCD interface: SPI ---supports upto 125MHz SPI input.
