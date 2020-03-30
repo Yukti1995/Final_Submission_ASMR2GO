@@ -1,1 +1,11 @@
+1.Download Raspbian ---from latest version available on the website, https://www.raspberrypi.org/downloads/raspbian/
 
+2.Unzip the compressed image --Using Unzip 
+
+3.The disk image has to be written on the microSD Card ---Done using Etcher 
+
+4.Insert the sd card in pi and boot up, ---plugin with a supply
+
+5. By default, 
+Username, --pi
+Password, --raspberry
