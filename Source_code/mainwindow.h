@@ -2,7 +2,7 @@ void recordMusic1()   //function to record music
     {
     
         switch (a_recorder1->state()) {
-        case QAudioRecorder::RecordingState://If it's already recording and you click button then it stops recording
+        case QAudioRecorder::RecordingState:  //If it's already recording and we click button then it stops recording
             a_recorder1->stop();
             break;
                 
