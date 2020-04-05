@@ -1,11 +1,16 @@
- QAudioRecorder *a_recorder1 = nullptr;
+#ifndef MAINWINDOW_H
+#define MAINWINDOW_H
+
+#include <QMainWindow>
+#include <QMediaPlayer> //Libraries to play music
+#include <QMediaPlaylist>
+#include <QAudioRecorder> //Library to rrecord audio
+#include "ui_mainwindow.h" 
+
+QAudioRecorder *a_recorder1 = nullptr;
     QAudioRecorder *a_recorder2 = nullptr;//4 objects of audio rcorder for 4 recording buttons
     QAudioRecorder *a_recorder3 = nullptr;
     QAudioRecorder *a_recorder4 = nullptr;
-
-
-
-
 
 
 void recordMusic1()   //function to record music
