@@ -4,3 +4,5 @@ The repository has complete set of work from it contributors:
 Yukti Behal.
 Mohit Gohil.
 Manush Patel
+
+!AltText[https://github.com/PatelManush/Final_Submission_ASMR2GO/blob/master/Hardware/Display/ASMR%20Device.jpg?raw=true]
