@@ -28,7 +28,7 @@ void recordMusic1()   //function to record music in the first button
                 
                 
               
-            audioSettings.setCodec("audio/amr");
+            audioSettings.setCodec("audio/asmr");
             audioSettings.setQuality(QMultimedia::HighQuality);
             a_recorder1->record();
             break;
