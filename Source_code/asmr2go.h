@@ -20,19 +20,22 @@ public:
     ~ASMR2Go();
 
 private:
-    Ui::MainWindow *ui;
+    Ui::ASMR2GO *ui;
     QAudioRecorder *rec_1 = nullptr;
     QAudioRecorder *rec_2 = nullptr;
     QAudioRecorder *rec_3 = nullptr;
     QAudioRecorder *rec_4 = nullptr;
+    //
     QMediaPlayer *play_1 = nullptr;
     QMediaPlayer *play_2 = nullptr;
     QMediaPlayer *play_3 = nullptr;
     QMediaPlayer *play_4 = nullptr;
+    //
     QMediaPlayer *play_5 = nullptr;
     QMediaPlayer *play_6 = nullptr;
     QMediaPlayer *play_7 = nullptr;
     QMediaPlayer *play_8 = nullptr;
+    //
 
 private slots:
     void recordMusic1()
@@ -47,7 +50,7 @@ private slots:
             audioSettings.setCodec("audio/amr");
             audioSettings.setQuality(QMultimedia::HighQuality);
             rec_1->setEncodingSettings(audioSettings);
-            rec_1->setOutputLocation(QUrl::fromLocalFile("/home/pi/Music/song1.amr"));
+            rec_1->setOutputLocation(QUrl::fromLocalFile("/home/yukti/Downloads/song1.amr"));
             rec_1->record();
             break;
         }
@@ -64,7 +67,7 @@ private slots:
             audioSettings.setCodec("audio/amr");
             audioSettings.setQuality(QMultimedia::HighQuality);
             rec_2->setEncodingSettings(audioSettings);
-            rec_2->setOutputLocation(QUrl::fromLocalFile("/home/pi/Music/song2.amr"));
+            rec_2->setOutputLocation(QUrl::fromLocalFile("/home/yukti/Downloads/song2.amr"));
             rec_2->record();
             break;
         }
@@ -81,7 +84,7 @@ private slots:
             audioSettings.setCodec("audio/amr");
             audioSettings.setQuality(QMultimedia::HighQuality);
             rec_3->setEncodingSettings(audioSettings);
-            rec_3->setOutputLocation(QUrl::fromLocalFile("/home/pi/Music/song3.amr"));
+            rec_3->setOutputLocation(QUrl::fromLocalFile("/home/yukti/Downloads/song3.amr"));
             rec_3->record();
             break;
         }
@@ -98,7 +101,7 @@ private slots:
             audioSettings.setCodec("audio/amr");
             audioSettings.setQuality(QMultimedia::HighQuality);
             rec_4->setEncodingSettings(audioSettings);
-            rec_4->setOutputLocation(QUrl::fromLocalFile("/home/pi/Music/song4.amr"));
+            rec_4->setOutputLocation(QUrl::fromLocalFile("/home/yukti/Downloads/song4.amr"));
             rec_4->record();
             break;
         }
