@@ -1,0 +1,4 @@
+
+Header:	#include <QMediaPlayer>
+qmake:	QT += multimedia
+Inherits:	QMediaObject
