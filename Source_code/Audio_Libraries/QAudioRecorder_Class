@@ -1,0 +1,3 @@
+ Header:	#include <QAudioRecorder>
+qmake:	QT += multimedia
+Inherits:	QMediaRecorder
