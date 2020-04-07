@@ -1,0 +1,3 @@
+ Header:	#include <QMediaPlaylist>
+qmake:	QT += multimedia
+Inherits:	QObject and QMediaBindableInterface
