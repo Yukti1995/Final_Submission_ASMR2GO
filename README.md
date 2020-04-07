@@ -1,3 +1,3 @@
 # Final_Submission_ASMR2GO
 Capstone project to help people reduce stress levels, improve insomnia and mood by live recording and playing of Autonomous Sensory Meridian Responsive voices.
-![ASMR2Go_GUI](https://user-images.githubusercontent.com/55197733/78391927-55f6f600-75b5-11ea-86b3-5c7b7e2cabe9.png)
+![Screenshot from 2020-04-06 21-45-25](https://user-images.githubusercontent.com/55197733/78623924-798c9b80-7856-11ea-9dab-3bd0fbc6c02c.png)
