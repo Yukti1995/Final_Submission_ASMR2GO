@@ -50,7 +50,7 @@ private slots:
             audioSettings.setCodec("audio/amr");
             audioSettings.setQuality(QMultimedia::HighQuality);
             rec_1->setEncodingSettings(audioSettings);
-            rec_1->setOutputLocation(QUrl::fromLocalFile("/home/yukti/Downloads/song1.amr"));
+            rec_1->setOutputLocation(QUrl::fromLocalFile("/home/max/song1.amr"));
             rec_1->record();
             break;
         }
@@ -67,7 +67,7 @@ private slots:
             audioSettings.setCodec("audio/amr");
             audioSettings.setQuality(QMultimedia::HighQuality);
             rec_2->setEncodingSettings(audioSettings);
-            rec_2->setOutputLocation(QUrl::fromLocalFile("/home/yukti/Downloads/song2.amr"));
+            rec_2->setOutputLocation(QUrl::fromLocalFile("/home/max/song2.amr"));
             rec_2->record();
             break;
         }
@@ -84,7 +84,7 @@ private slots:
             audioSettings.setCodec("audio/amr");
             audioSettings.setQuality(QMultimedia::HighQuality);
             rec_3->setEncodingSettings(audioSettings);
-            rec_3->setOutputLocation(QUrl::fromLocalFile("/home/yukti/Downloads/song3.amr"));
+            rec_3->setOutputLocation(QUrl::fromLocalFile("/home/max/song3.amr"));
             rec_3->record();
             break;
         }
@@ -101,7 +101,7 @@ private slots:
             audioSettings.setCodec("audio/amr");
             audioSettings.setQuality(QMultimedia::HighQuality);
             rec_4->setEncodingSettings(audioSettings);
-            rec_4->setOutputLocation(QUrl::fromLocalFile("/home/yukti/Downloads/song4.amr"));
+            rec_4->setOutputLocation(QUrl::fromLocalFile("/home/max/song4.amr"));
             rec_4->record();
             break;
         }
