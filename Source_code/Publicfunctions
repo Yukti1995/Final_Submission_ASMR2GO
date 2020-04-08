@@ -1,0 +1,5 @@
+ 	QAudioRecorder(QObject *parent = nullptr)
+  
+  QMediaPlayer(QObject *parent = nullptr)
+  
+  
