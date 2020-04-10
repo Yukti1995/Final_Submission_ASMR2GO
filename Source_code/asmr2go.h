@@ -106,4 +106,47 @@ private slots:
             break;
         }
     }
+    
+    
+    
+    void playMusic1()
+    {
+        switch (play_1->state()) {
+        case QMediaPlayer::PlayingState:
+            play_1->stop();
+            ui->pushbutton_1->setText("");
+            break;
+        case QMediaPlayer::PausedState:
+        case QMediaPlayer::StoppedState:
+            QMediaPlaylist *playlist = new QMediaPlaylist();
+            playlist->addMedia(QUrl::fromLocalFile("/home/pi/Music/song1.amr.amr"));
+            playlist->setPlaybackMode(QMediaPlaylist::Loop);
+            play_1 = new QMediaPlayer;
+            play_1->setPlaylist(playlist);
+            ui->pushbutton_1->setText("...");
+            play_1->play();
+            break;
+        }
+    }
+
+    void playMusic2()
+    {
+        switch (play_2->state()) {
+        case QMediaPlayer::PlayingState:
+            play_2->stop();
+            ui->pushbutton_2->setText("");
+            break;
+        case QMediaPlayer::PausedState:
+        case QMediaPlayer::StoppedState:
+            QMediaPlaylist *playlist = new QMediaPlaylist();
+            playlist->addMedia(QUrl::fromLocalFile("/home/pi/Music/song2.amr"));
+            playlist->setPlaybackMode(QMediaPlaylist::Loop);
+            play_2 = new QMediaPlayer;
+            play_2->setPlaylist(playlist);
+            ui->pushbutton_2->setText("...");
+            play_2->play();
+            break;
+        }
+    }
+
 #endif // ASMR2GO_H
