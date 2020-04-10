@@ -7,3 +7,6 @@ sudo reboot
 
 sudo apt-get install pi-bluetooth
 sudo apt-get install bluetooth bluez blueman
+
+sudo apt-get install pulseaudio
+sudo apt-get install pavucontrol paprefs
