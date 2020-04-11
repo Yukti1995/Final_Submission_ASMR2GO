@@ -266,6 +266,7 @@ private slots:
                 //
             }
         }
+        }
         void playMusic8()
         {
             switch (play_8->state()) {
@@ -285,6 +286,7 @@ private slots:
                 ui->pushbutton_8->setText("The_Light");
                 break;
                 //
+            }
             }
         }
 
