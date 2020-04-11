@@ -245,6 +245,7 @@ private slots:
                 break;
                 //
             }
+            }
              void playMusic7()
         {
             switch (play_7->state()) {
