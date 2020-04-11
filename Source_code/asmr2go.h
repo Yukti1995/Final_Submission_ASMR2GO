@@ -224,6 +224,7 @@ private slots:
             break;
             //
         }
+        }
         void playMusic6()
         {
             switch (play_6->state()) {
@@ -244,6 +245,49 @@ private slots:
                 break;
                 //
             }
+             void playMusic7()
+        {
+            switch (play_7->state()) {
+            case QMediaPlayer::PlayingState:
+                play_7->stop();
+                ui->pushbutton_7->setText("The_Sooth");
+                break;
+                //
+            case QMediaPlayer::PausedState:
+            case QMediaPlayer::StoppedState:
+                QMediaPlaylist *playlist = new QMediaPlaylist();
+                playlist->addMedia(QUrl::fromLocalFile("/home/manush/Documents/yukti/Final_Submission_ASMR2GO/Software/Sound_processing/Sound_samples"));
+                playlist->setPlaybackMode(QMediaPlaylist::Loop);
+                play_7 = new QMediaPlayer;
+                play_7->setPlaylist(playlist);
+                play_7->play();
+                ui->pushbutton_7->setText("The_Sooth");
+                break;
+                //
+            }
+        }
+        void playMusic8()
+        {
+            switch (play_8->state()) {
+            case QMediaPlayer::PlayingState:
+                play_8->stop();
+                ui->pushbutton_7->setText("The_Light");
+                break;
+                //
+            case QMediaPlayer::PausedState:
+            case QMediaPlayer::StoppedState:
+                QMediaPlaylist *playlist = new QMediaPlaylist();
+                playlist->addMedia(QUrl::fromLocalFile("/home/manush/Documents/yukti/Final_Submission_ASMR2GO/Software/Sound_processing/Sound_samples"));
+                playlist->setPlaybackMode(QMediaPlaylist::Loop);
+                play_8 = new QMediaPlayer;
+                play_8->setPlaylist(playlist);
+                play_8->play();
+                ui->pushbutton_8->setText("The_Light");
+                break;
+                //
+            }
+        }
+
 
 
 #endif // ASMR2GO_H
