@@ -128,7 +128,7 @@ private slots:
         case QMediaPlayer::PausedState:
         case QMediaPlayer::StoppedState:
             QMediaPlaylist *playlist = new QMediaPlaylist();
-            playlist->addMedia(QUrl::fromLocalFile("/home/pi/Music/song1.amr.amr"));
+            playlist->addMedia(QUrl::fromLocalFile("/home/max/song1.amr"));
             playlist->setPlaybackMode(QMediaPlaylist::Loop);
             play_1 = new QMediaPlayer;
             play_1->setPlaylist(playlist);
@@ -150,7 +150,7 @@ private slots:
         case QMediaPlayer::PausedState:
         case QMediaPlayer::StoppedState:
             QMediaPlaylist *playlist = new QMediaPlaylist();
-            playlist->addMedia(QUrl::fromLocalFile("/home/pi/Music/song2.amr"));
+            playlist->addMedia(QUrl::fromLocalFile("/home/max/song2.amr"));
             playlist->setPlaybackMode(QMediaPlaylist::Loop);
             play_2 = new QMediaPlayer;
             play_2->setPlaylist(playlist);
@@ -172,7 +172,7 @@ private slots:
         case QMediaPlayer::PausedState:
         case QMediaPlayer::StoppedState:
             QMediaPlaylist *playlist = new QMediaPlaylist();
-            playlist->addMedia(QUrl::fromLocalFile("/home/pi/Music/song3.amr"));
+            playlist->addMedia(QUrl::fromLocalFile("/home/max/song3.amr"));
             playlist->setPlaybackMode(QMediaPlaylist::Loop);
             play_3= new QMediaPlayer;
             play_3->setPlaylist(playlist);
@@ -194,7 +194,7 @@ private slots:
         case QMediaPlayer::PausedState:
         case QMediaPlayer::StoppedState:
             QMediaPlaylist *playlist = new QMediaPlaylist();
-            playlist->addMedia(QUrl::fromLocalFile("/home/pi/Music/song4.amr"));
+            playlist->addMedia(QUrl::fromLocalFile("/home/max/song4.amr"));
             playlist->setPlaybackMode(QMediaPlaylist::Loop);
             play_4 = new QMediaPlayer;
             play_4->setPlaylist(playlist);
