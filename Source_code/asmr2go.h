@@ -204,5 +204,46 @@ private slots:
             //
         }
     }
+    void playMusic5()
+    {
+        switch (play_5->state()) {
+        case QMediaPlayer::PlayingState:
+            play_5->stop();
+            ui->pushbutton_5->setText("Take_Care");
+            break;
+            //
+        case QMediaPlayer::PausedState:
+        case QMediaPlayer::StoppedState:
+            QMediaPlaylist *playlist = new QMediaPlaylist();
+            playlist->addMedia(QUrl::fromLocalFile("/home/manush/Documents/yukti/audio_files"));
+            playlist->setPlaybackMode(QMediaPlaylist::Loop);
+            play_5 = new QMediaPlayer;
+            play_5->setPlaylist(playlist);
+            play_5->play();
+            ui->pushbutton_5->setText("Take_Care");
+            break;
+            //
+        }
+        void playMusic6()
+        {
+            switch (play_6->state()) {
+            case QMediaPlayer::PlayingState:
+                play_6->stop();
+                ui->pushbutton_6->setText("The_Lullyby");
+                break;
+                //
+            case QMediaPlayer::PausedState:
+            case QMediaPlayer::StoppedState:
+                QMediaPlaylist *playlist = new QMediaPlaylist();
+                playlist->addMedia(QUrl::fromLocalFile("/home/manush/Documents/yukti/audio_files"));
+                playlist->setPlaybackMode(QMediaPlaylist::Loop);
+                play_6 = new QMediaPlayer;
+                play_6->setPlaylist(playlist);
+                play_6->play();
+                ui->pushbutton_6->setText("The_Lullyby");
+                break;
+                //
+            }
+
 
 #endif // ASMR2GO_H
