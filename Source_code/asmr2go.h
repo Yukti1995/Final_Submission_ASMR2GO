@@ -1,10 +1,10 @@
 #ifndef ASMR2GO_H
 #define ASMR2GO_H
 
-#include <QMainWindow>//Library to build main window 
-#include <QMediaPlayer> //Library to play music 
+#include <QMainWindow>//Library to build main window
+#include <QMediaPlayer> //Library to play music
 #include <QMediaPlaylist>//Library to interface with other devices
-#include <QAudioRecorder> //Library to record music 
+#include <QAudioRecorder> //Library to record music
 #include "ui_mainwindow.h" //header to generate .ui file for home page QT5 wizard generation
 
 namespace Ui {
@@ -114,9 +114,9 @@ private slots:
             //
         }
     }
-    
-    
-    
+
+
+
     void playMusic1()
     {
         switch (play_1->state()) {
@@ -160,7 +160,7 @@ private slots:
             //
         }
     }
-    
+
       void playMusic3()
     {
         switch (play_3->state()) {
@@ -203,6 +203,7 @@ private slots:
             break;
             //
         }
+
     }
     void playMusic5()
     {
@@ -215,7 +216,7 @@ private slots:
         case QMediaPlayer::PausedState:
         case QMediaPlayer::StoppedState:
             QMediaPlaylist *playlist = new QMediaPlaylist();
-            playlist->addMedia(QUrl::fromLocalFile("/home/manush/Documents/yukti/audio_files"));
+            playlist->addMedia(QUrl::fromLocalFile("/home/manush/Documents/yukti/audio_files/Take_Care.mp3"));
             playlist->setPlaybackMode(QMediaPlaylist::Loop);
             play_5 = new QMediaPlayer;
             play_5->setPlaylist(playlist);
@@ -224,7 +225,7 @@ private slots:
             break;
             //
         }
-        }
+    }
         void playMusic6()
         {
             switch (play_6->state()) {
@@ -236,7 +237,7 @@ private slots:
             case QMediaPlayer::PausedState:
             case QMediaPlayer::StoppedState:
                 QMediaPlaylist *playlist = new QMediaPlaylist();
-                playlist->addMedia(QUrl::fromLocalFile("/home/manush/Documents/yukti/audio_files"));
+                playlist->addMedia(QUrl::fromLocalFile("/home/manush/Documents/yukti/audio_files/The_Lullyby.mp3"));
                 playlist->setPlaybackMode(QMediaPlaylist::Loop);
                 play_6 = new QMediaPlayer;
                 play_6->setPlaylist(playlist);
@@ -245,8 +246,9 @@ private slots:
                 break;
                 //
             }
-            }
-             void playMusic7()
+        }
+
+        void playMusic7()
         {
             switch (play_7->state()) {
             case QMediaPlayer::PlayingState:
@@ -257,7 +259,7 @@ private slots:
             case QMediaPlayer::PausedState:
             case QMediaPlayer::StoppedState:
                 QMediaPlaylist *playlist = new QMediaPlaylist();
-                playlist->addMedia(QUrl::fromLocalFile("/home/manush/Documents/yukti/Final_Submission_ASMR2GO/Software/Sound_processing/Sound_samples"));
+                playlist->addMedia(QUrl::fromLocalFile("/home/manush/Documents/yukti/Final_Submission_ASMR2GO/Software/Sound_processing/Sound_samples/The_Sooth.mp3"));
                 playlist->setPlaybackMode(QMediaPlaylist::Loop);
                 play_7 = new QMediaPlayer;
                 play_7->setPlaylist(playlist);
@@ -266,7 +268,6 @@ private slots:
                 break;
                 //
             }
-        }
         }
         void playMusic8()
         {
@@ -279,7 +280,7 @@ private slots:
             case QMediaPlayer::PausedState:
             case QMediaPlayer::StoppedState:
                 QMediaPlaylist *playlist = new QMediaPlaylist();
-                playlist->addMedia(QUrl::fromLocalFile("/home/manush/Documents/yukti/Final_Submission_ASMR2GO/Software/Sound_processing/Sound_samples"));
+                playlist->addMedia(QUrl::fromLocalFile("/home/manush/Documents/yukti/Final_Submission_ASMR2GO/Software/Sound_processing/Sound_samples/The_Light.mp3"));
                 playlist->setPlaybackMode(QMediaPlaylist::Loop);
                 play_8 = new QMediaPlayer;
                 play_8->setPlaylist(playlist);
@@ -288,9 +289,8 @@ private slots:
                 break;
                 //
             }
-            }
         }
 
-
-
 #endif // ASMR2GO_H
+
+
