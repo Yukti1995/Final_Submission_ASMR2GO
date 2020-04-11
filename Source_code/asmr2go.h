@@ -44,6 +44,7 @@ private slots:
         case QAudioRecorder::RecordingState:
             rec_1->stop();
             break;
+            //
         case QAudioRecorder::PausedState:
         case QAudioRecorder::StoppedState:
             QAudioEncoderSettings audioSettings;
@@ -53,6 +54,7 @@ private slots:
             rec_1->setOutputLocation(QUrl::fromLocalFile("/home/max/song1.amr"));
             rec_1->record();
             break;
+            //
         }
     }
     void recordMusic2()
@@ -61,6 +63,7 @@ private slots:
         case QAudioRecorder::RecordingState:
             rec_2->stop();
             break;
+            //
         case QAudioRecorder::PausedState:
         case QAudioRecorder::StoppedState:
             QAudioEncoderSettings audioSettings;
@@ -70,6 +73,7 @@ private slots:
             rec_2->setOutputLocation(QUrl::fromLocalFile("/home/max/song2.amr"));
             rec_2->record();
             break;
+            //
         }
     }
     void recordMusic3()
@@ -78,6 +82,7 @@ private slots:
         case QAudioRecorder::RecordingState:
             rec_3->stop();
             break;
+            //
         case QAudioRecorder::PausedState:
         case QAudioRecorder::StoppedState:
             QAudioEncoderSettings audioSettings;
@@ -87,6 +92,7 @@ private slots:
             rec_3->setOutputLocation(QUrl::fromLocalFile("/home/max/song3.amr"));
             rec_3->record();
             break;
+            //
         }
     }
     void recordMusic4()
@@ -95,6 +101,7 @@ private slots:
         case QAudioRecorder::RecordingState:
             rec_4->stop();
             break;
+            //
         case QAudioRecorder::PausedState:
         case QAudioRecorder::StoppedState:
             QAudioEncoderSettings audioSettings;
@@ -104,6 +111,7 @@ private slots:
             rec_4->setOutputLocation(QUrl::fromLocalFile("/home/max/song4.amr"));
             rec_4->record();
             break;
+            //
         }
     }
     
@@ -116,6 +124,7 @@ private slots:
             play_1->stop();
             ui->pushbutton_1->setText("");
             break;
+            //
         case QMediaPlayer::PausedState:
         case QMediaPlayer::StoppedState:
             QMediaPlaylist *playlist = new QMediaPlaylist();
@@ -126,6 +135,7 @@ private slots:
             ui->pushbutton_1->setText("...");
             play_1->play();
             break;
+            //
         }
     }
 
@@ -136,6 +146,7 @@ private slots:
             play_2->stop();
             ui->pushbutton_2->setText("");
             break;
+            //
         case QMediaPlayer::PausedState:
         case QMediaPlayer::StoppedState:
             QMediaPlaylist *playlist = new QMediaPlaylist();
@@ -146,6 +157,51 @@ private slots:
             ui->pushbutton_2->setText("...");
             play_2->play();
             break;
+            //
+        }
+    }
+    
+      void playMusic3()
+    {
+        switch (play_3->state()) {
+        case QMediaPlayer::PlayingState:
+            play_3->stop();
+            ui->pushbutton_3->setText("");
+            break;
+            //
+        case QMediaPlayer::PausedState:
+        case QMediaPlayer::StoppedState:
+            QMediaPlaylist *playlist = new QMediaPlaylist();
+            playlist->addMedia(QUrl::fromLocalFile("/home/pi/Music/song3.amr"));
+            playlist->setPlaybackMode(QMediaPlaylist::Loop);
+            play_3= new QMediaPlayer;
+            play_3->setPlaylist(playlist);
+            play_3->play();
+            ui->pushbutton_3->setText("...");
+            break;
+            //
+        }
+    }
+
+    void playMusic4()
+    {
+        switch (play_4->state()) {
+        case QMediaPlayer::PlayingState:
+            play_4->stop();
+            ui->pushbutton_4->setText("");
+            break;
+            //
+        case QMediaPlayer::PausedState:
+        case QMediaPlayer::StoppedState:
+            QMediaPlaylist *playlist = new QMediaPlaylist();
+            playlist->addMedia(QUrl::fromLocalFile("/home/pi/Music/song4.amr"));
+            playlist->setPlaybackMode(QMediaPlaylist::Loop);
+            play_4 = new QMediaPlayer;
+            play_4->setPlaylist(playlist);
+            play_4->play();
+            ui->pushbutton_4->setText("...");
+            break;
+            //
         }
     }
 
