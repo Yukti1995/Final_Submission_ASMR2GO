@@ -1,0 +1,2 @@
+We utilize here a LCD screen that has resistive touchscreen. This particular touchscreen makes use of SPI communication protocol.
+The GPIO pins from the raspberry pi are directly connected to the female header of display.

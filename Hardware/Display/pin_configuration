@@ -1,0 +1,16 @@
+PIN NO. | SYMBOL | DESCRIPTION
+1, 17 | 3.3V | Power positive (3.3V power input)
+2, 4 | 5V | Power positive (5V power input)
+3, 5, 7, 8, 10, 22 | NC | NC
+6, 9, 14, 20, 25 | GND | Ground
+11 | TP_IRQ | Touch panel interrupt, low level while the Touch panel detects touching
+12 | KEY1 | Key
+13 | RST | Reset
+15 | LCD_RS | LCD instruction control, Instruction/Data Register selection
+16 | KEY2 | Key
+18 | KEY3 | Key
+19 | LCD_SI / TP_SI | SPI data input of LCD/Touch Panel
+21 | TP_SO | SPI data output of Touch Panel
+23 | LCD_SCK / TP_SCK | SPI clock of LCD/Touch Panel
+24 | LCD_CS | LCD chip selection, low active
+26 | TP_CS | Touch Panel chip selection, low active
