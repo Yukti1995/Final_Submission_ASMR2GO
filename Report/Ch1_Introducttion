@@ -1,1 +1,52 @@
 
+                                                          #Chapter I
+                                                         Introduction
+      Overview
+                                                                                                                                     Embedded system can be defined as any intelligent circuit system that performs a specific task targeted for a special purpose. The embedded family includes IoT-Internet of things, AL – Artificial intelligence and various other automated devices. The ASMR Device developed with the help of raspberry pi and C++ tools can help to heal mentally by listening to relaxing and soothing sounds.
+
+Problem Statement
+Necessity is the mother of all inventions. 
+Humans have reached beyond the horizon and all the way into the everlasting space with the help of the technology. Unfortunately, they fail to understand the depths of their own heart and explore their own sorrows, and when they fail to do that, they fall into the deep well of depression and anxiety, a void from where there is no rope that pulls them out. 
+The modern time requires a desperate need to understand and find a rather instant solution for mental health. According to research, female is more vulnerable to mental health at a young age of 16-21[ CITATION Bra19 \l 4105 ]. When the society fails to provide a solution for such problems, the youth tries to find solution in Drugs, Alcohol and other abusive substances which have more harmful effects on body rather than providing any kind of help. 
+
+
+Goal and Objectives
+    • Goal 
+To develop a portable audio device capable of generating soothing audio output whenever and wherever the user requires it to release themselves from anxiety and depression.
+    • Objective
+    • Assembly of 3.5 inch led touchscreen with Raspberry pi 3b+.
+    • Setting the interface between Raspberry pi and different hardware peripherals such as wireless headphone (Bluetooth) and microphone and portable batteries.
+    • Connecting the host laptop to the Raspberry pi platform via cross toolchain.
+
+
+
+
+
+The Scope of the Project
+    • Final Product
+    • Audio Box with inbuilt audio files containing soothing voices and sounds.
+    • Complete utilization of Bluetooth, I\O devices, headphone and microphone peripherals.
+    •  Project Timeline
+        ◦ January 17, 2020 – Project suggested by professor Takis.
+        ◦ February 10, 2018-Selecting the hardware components and gathering them for assembly.
+        ◦ February 10, 2018 – Flashing Raspbian image on Raspberry Pi using micro sd card.
+        ◦ February 26, 2018 – gathering data on audio processing files and digital signal processing.
+        ◦ March 20, 2018 – Recording audio files used as an input device.
+        ◦ April 01, 2018 – Successfully connecting host machine to Raspberry Pi via cross toolchain.
+    • The Unexpected
+        ◦ The unfortunate event of Covid-19 pendamic made it next to impossible for the team to meet up and share progress and ideas, however the digital media kept us connected with each other and with our guide professor Takis.
+
+Outcomes and Benefits
+    • A stylish sleaky audio device with 3.5’ led display.
+    • 4.3” touchscreen display to navigate through audio options.
+    • Option for user to save audio files up to 8 GB.
+    • Live audio recording.
+    • Light in weight and portable.
+
+Facilities and Resources
+    • Primary Resources:
+        ◦ C in a nutshell, O’Reily Publication.
+        ◦ Exploring Raspberry Pi, Derek Molloy.
+        ◦ Poems, Manush Patel.
+    • Secondary Resources:
+        ◦ Cross Toolchain, Video guidance by professor Takis Zourntos. 
