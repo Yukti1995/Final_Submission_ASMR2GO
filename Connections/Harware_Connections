@@ -1,1 +1,10 @@
+We are using Raspberry Pi 3 model B+ for making our model of ASMR2Go. This provides live recording and playing of those ASMR voices, apart from 
+this there are certain ASMR standard voices from YouTube that are feeded to the model in an mp3 format. 
 
+
+The voice in the system is recorded via the means of USB microphone connected to the pi. 
+The user can select which voice he/she wants to play by clicking on the touch screen LCD attached to the pi. The pi is bluetooth compatible, 
+for this reason we have an option for the users that they can either use a headphone or even a speaker can be enabled to play these voices.
+
+For demonstration purposes, we are using a bluetooth speaker. 
+Apart from this, the pi and the LCD screen are enclosed in starto case ,black in color for easy accessibility. 
