@@ -5,7 +5,7 @@
 #include <QMediaPlayer> //Library to play music
 #include <QMediaPlaylist>//Library to interface with other devices
 #include <QAudioRecorder> //Library to record music
-#include "ui_mainwindow.h" //header to generate .ui file for home page QT5 wizard generation
+#include "ui_asmr2go.h" //header to generate .ui file for home page QT5 wizard generation
 
 namespace Ui {
 class ASMR2Go;
@@ -16,7 +16,7 @@ class ASMR2Go : public QMainWindow // Links the program to the main GUI window
     Q_OBJECT
 
 public:
-    explicit ASMR2Go(QWidget *parent = 0);
+    explicit ASMR2Go(QWidget *parent = nullptr);
     ~ASMR2Go();
 
 private: //functions can be accessed only inside the class
@@ -131,8 +131,8 @@ private slots:
         case QMediaPlayer::StoppedState:
             QMediaPlaylist *playlist = new QMediaPlaylist();//to assign the voice recorded in rec1() object 
             playlist->addMedia(QUrl::fromLocalFile("/home/max/song1.amr")); //output where the object has to take extract it media from 
-            playlist->setPlaybackMode(QMediaPlaylist::Loop); // playing the voice 
-            play_1 = new QMediaPlayer;
+            playlist->setPlaybackMode(QMediaPlaylist::Loop); // playing the voice in a loop until the button is pressed
+            play_1 = new QMediaPlayer;// assigning playlist as a new media player object player to keep playing and avoiding device conncetion problems 
             play_1->setPlaylist(playlist);
             ui->pushbutton_1->setText("...");
             play_1->play();
@@ -212,18 +212,18 @@ private slots:
         switch (play_5->state()) {
         case QMediaPlayer::PlayingState:
             play_5->stop();
-            ui->pushbutton_5->setText("Take_Care");
+            ui->pushbutton_5->setText("Cats Purr");
             break;
             //
         case QMediaPlayer::PausedState:
         case QMediaPlayer::StoppedState:
             QMediaPlaylist *playlist = new QMediaPlaylist();
-            playlist->addMedia(QUrl::fromLocalFile("/home/manush/Documents/yukti/audio_files/Take_Care.mp3"));
+            playlist->addMedia(QUrl::fromLocalFile("/home/manush/Documents/yukti/audio_files/Catspurr.mp3"));
             playlist->setPlaybackMode(QMediaPlaylist::Loop);
             play_5 = new QMediaPlayer;
             play_5->setPlaylist(playlist);
             play_5->play();
-            ui->pushbutton_5->setText("Take_Care");
+            ui->pushbutton_5->setText("Cats purr");
             break;
             //
         }
@@ -233,18 +233,18 @@ private slots:
             switch (play_6->state()) {
             case QMediaPlayer::PlayingState:
                 play_6->stop();
-                ui->pushbutton_6->setText("The_Lullyby");
+                ui->pushbutton_6->setText("Leaves");
                 break;
                 //
             case QMediaPlayer::PausedState:
             case QMediaPlayer::StoppedState:
                 QMediaPlaylist *playlist = new QMediaPlaylist();
-                playlist->addMedia(QUrl::fromLocalFile("/home/manush/Documents/yukti/audio_files/The_Lullyby.mp3"));
+                playlist->addMedia(QUrl::fromLocalFile("/home/manush/Documents/yukti/audio_files/Leaves.mp3"));
                 playlist->setPlaybackMode(QMediaPlaylist::Loop);
                 play_6 = new QMediaPlayer;
                 play_6->setPlaylist(playlist);
                 play_6->play();
-                ui->pushbutton_6->setText("The_Lullyby");
+                ui->pushbutton_6->setText("Leaves");
                 break;
                 //
             }
@@ -255,18 +255,18 @@ private slots:
             switch (play_7->state()) {
             case QMediaPlayer::PlayingState:
                 play_7->stop();
-                ui->pushbutton_7->setText("The_Sooth");
+                ui->pushbutton_7->setText("Snowstorm");
                 break;
                 //
             case QMediaPlayer::PausedState:
             case QMediaPlayer::StoppedState:
                 QMediaPlaylist *playlist = new QMediaPlaylist();
-                playlist->addMedia(QUrl::fromLocalFile("/home/manush/Documents/yukti/Final_Submission_ASMR2GO/Software/Sound_processing/Sound_samples/The_Sooth.mp3"));
+                playlist->addMedia(QUrl::fromLocalFile("/home/manush/Documents/yukti/Final_Submission_ASMR2GO/Software/Sound_processing/Sound_samples/Snowstorm.mp3"));
                 playlist->setPlaybackMode(QMediaPlaylist::Loop);
                 play_7 = new QMediaPlayer;
                 play_7->setPlaylist(playlist);
                 play_7->play();
-                ui->pushbutton_7->setText("The_Sooth");
+                ui->pushbutton_7->setText("Snowstorm");
                 break;
                 //
             }
@@ -276,18 +276,18 @@ private slots:
             switch (play_8->state()) {
             case QMediaPlayer::PlayingState:
                 play_8->stop();
-                ui->pushbutton_7->setText("The_Light");
+                ui->pushbutton_7->setText("Pebbles");
                 break;
                 //
             case QMediaPlayer::PausedState:
             case QMediaPlayer::StoppedState:
                 QMediaPlaylist *playlist = new QMediaPlaylist();
-                playlist->addMedia(QUrl::fromLocalFile("/home/manush/Documents/yukti/Final_Submission_ASMR2GO/Software/Sound_processing/Sound_samples/The_Light.mp3"));
+                playlist->addMedia(QUrl::fromLocalFile("/home/manush/Documents/yukti/Final_Submission_ASMR2GO/Software/Sound_processing/Sound_samples/Pebbles.mp3"));
                 playlist->setPlaybackMode(QMediaPlaylist::Loop);
                 play_8 = new QMediaPlayer;
                 play_8->setPlaylist(playlist);
                 play_8->play();
-                ui->pushbutton_8->setText("The_Light");
+                ui->pushbutton_8->setText("Pebbles");
                 break;
                 //
             }
