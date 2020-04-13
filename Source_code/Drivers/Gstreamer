@@ -1,0 +1,10 @@
+GStreamer is a pipeline-based multimedia framework that links together a wide variety of media processing systems to complete complex workflows. 
+For instance, GStreamer can be used to build a system that reads files in one format, processes them, and exports them in another.
+
+Source, Wikipedia
+
+
+
+
+sudo apt-get install gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav
+
