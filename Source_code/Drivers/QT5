@@ -1,1 +1,23 @@
+Multimedia
+Multimedia support in Qt is provided by the Qt Multimedia module. The Qt Multimedia module provides a rich feature set that enables you to easily take advantage of a platform's multimedia capabilities such as media playback and the use of camera and radio devices.
 
+Features
+Here are some examples of what can be done with Qt Multimedia APIs:
+
+Access raw audio devices for input and output
+Play low latency sound effects
+Play media files in playlists (such as compressed audio or video files)
+Record audio and compress it
+Tune and listen to radio stations
+Use a camera, including viewfinder, image capture, and movie recording
+Play 3D positional audio with Qt Audio Engine
+Decode audio media files into memory for processing
+Accessing video frames or audio buffers as they are played or recorded
+
+
+
+
+Source,   https://doc.qt.io/qt-5/multimediaoverview.html
+
+
+sudo apt-get install qtmultimedia5-dev libqt5mediaqwidgets5 libqt5multimedia5-plugins libqt5multimedia5
