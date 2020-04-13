@@ -1,4 +1,4 @@
-#ifndef ASMR2GO_H
+#ifndef ASMR2GO_H // These happen to be there by default 
 #define ASMR2GO_H
 
 #include <QMainWindow>//Library to build main window
@@ -11,7 +11,7 @@ namespace Ui {
 class ASMR2Go;
 }
 
-class ASMR2Go : public QMainWindow
+class ASMR2Go : public QMainWindow // Links the program to the main GUI window 
 {
     Q_OBJECT
 
@@ -19,39 +19,41 @@ public:
     explicit ASMR2Go(QWidget *parent = 0);
     ~ASMR2Go();
 
-private:
+private: //functions can be accessed only inside the class
     Ui::ASMR2GO *ui;
     QAudioRecorder *rec_1 = nullptr;
     QAudioRecorder *rec_2 = nullptr;
     QAudioRecorder *rec_3 = nullptr;
     QAudioRecorder *rec_4 = nullptr;
-    //
+    // 4 objects to process live recording on the system 
     QMediaPlayer *play_1 = nullptr;
     QMediaPlayer *play_2 = nullptr;
     QMediaPlayer *play_3 = nullptr;
     QMediaPlayer *play_4 = nullptr;
-    //
+    //4 objects to process playing of 4 recorded voices 
     QMediaPlayer *play_5 = nullptr;
     QMediaPlayer *play_6 = nullptr;
     QMediaPlayer *play_7 = nullptr;
     QMediaPlayer *play_8 = nullptr;
-    //
+    //my main functions()
 
 private slots:
-    void recordMusic1()
+    void recordMusic1() // main function 1
     {
         switch (rec_1->state()) {
-        case QAudioRecorder::RecordingState:
+        case QAudioRecorder::RecordingState: // if the current state of the recorder function is already recording, this would stop it and 
+                //break it out of the loop
             rec_1->stop();
             break;
-            //
-        case QAudioRecorder::PausedState:
+          
+        case QAudioRecorder::PausedState://when the current state of recorder is paused, it is allowed to go in the stopped state and 
+                //with an adaptive Multi Rate format the object rec_1 on pushing it starts to record 
         case QAudioRecorder::StoppedState:
             QAudioEncoderSettings audioSettings;
-            audioSettings.setCodec("audio/amr");
+            audioSettings.setCodec("audio/amr");// amr , audio compression format for live speech signals 
             audioSettings.setQuality(QMultimedia::HighQuality);
             rec_1->setEncodingSettings(audioSettings);
-            rec_1->setOutputLocation(QUrl::fromLocalFile("/home/max/song1.amr"));
+            rec_1->setOutputLocation(QUrl::fromLocalFile("/home/max/song1.amr")); // this is the output location.
             rec_1->record();
             break;
             //
@@ -127,9 +129,9 @@ private slots:
             //
         case QMediaPlayer::PausedState:
         case QMediaPlayer::StoppedState:
-            QMediaPlaylist *playlist = new QMediaPlaylist();
-            playlist->addMedia(QUrl::fromLocalFile("/home/max/song1.amr"));
-            playlist->setPlaybackMode(QMediaPlaylist::Loop);
+            QMediaPlaylist *playlist = new QMediaPlaylist();//to assign the voice recorded in rec1() object 
+            playlist->addMedia(QUrl::fromLocalFile("/home/max/song1.amr")); //output where the object has to take extract it media from 
+            playlist->setPlaybackMode(QMediaPlaylist::Loop); // playing the voice 
             play_1 = new QMediaPlayer;
             play_1->setPlaylist(playlist);
             ui->pushbutton_1->setText("...");
