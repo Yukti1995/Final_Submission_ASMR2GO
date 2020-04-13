@@ -1,0 +1,6 @@
+                                                          Abstract
+
+ASMR2Go is a niche electronic product designed to improve mental health of an individual with the help of Autonomous Sensory Median Response (A.S.M.R) technique. Embedded technology has always provided a leading solution in betterment of mankind. 
+The team has used Raspberry Pi as a main controlling device with multiple audio files which contain highly soothing and relaxing sound which are useful to release stress and anxiety. 
+The following system consist of the a screen mounted on raspberry pi with Bluetooth headphones connected with the system and a microphone to record any live audio signal which the user might find easy and relaxing to themselves.
+The device is expected to run independently using embedded C++ and GUI interfacing tools.
