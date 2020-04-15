@@ -1,4 +1,4 @@
  Header:	#include <QAudioRecorder>
 qmake:	QT += multimedia
 Inherits:	QMediaRecorder
-//Library if performing audio recording in the device 
+//Library required ,if performing audio recording in the device 
