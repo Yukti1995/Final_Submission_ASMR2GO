@@ -2,3 +2,5 @@
 Header:	#include <QMediaPlayer>
 qmake:	QT += multimedia
 Inherits:	QMediaObject
+
+//Library required ,if performing audio playing on the device
