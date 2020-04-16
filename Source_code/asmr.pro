@@ -9,7 +9,7 @@ QT += multimedia
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = asmr2go
+TARGET = asmr
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -27,13 +27,13 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        asmr2go.cpp
+        asmr.cpp
 
 HEADERS += \
-        asmr2go.h
+        asmr.h
 
 FORMS += \
-        asmr2go.ui
+        asmr.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
