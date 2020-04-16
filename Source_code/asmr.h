@@ -136,7 +136,7 @@ private slots:
             m_player1 = new QMediaPlayer;// assigning playlist as a new media player object player to keep playing and avoiding device conncetion problems 
             m_player1->setPlaylist(playlist);
             ui->pushbutton_1->setText("...");
-            play_1->play();
+            m_player1->play();
             break;
             //
         }
@@ -212,7 +212,7 @@ private slots:
     {
         switch (m_player5->state()) {
         case QMediaPlayer::PlayingState:
-            m_player3->stop();
+            m_player5->stop();
             ui->pushbutton_5->setText("1");
             break;
             //
