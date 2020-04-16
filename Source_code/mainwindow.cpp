@@ -1,10 +1,10 @@
-#include "asmr2go.h"
+#include "asmr.h"
 #include <QApplication>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    ASMR2Go w;
+    ASMR w;
     w.show();
 
     return a.exec();
