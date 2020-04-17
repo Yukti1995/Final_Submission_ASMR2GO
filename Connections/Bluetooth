@@ -1,0 +1,17 @@
+sudo apt-get install pulseaudio
+sudo apt-get install pulseaudio-module-bluetooth
+
+sudo systemctl restart bluetooth
+
+bluetoothctl
+#bluetooth window
+
+$bluetooth: power on
+$bluetooth: dicoverable on
+$bluetooth: pairable on
+$bluetooth: agent on
+$bluetooth: quit
+
+
+
+
