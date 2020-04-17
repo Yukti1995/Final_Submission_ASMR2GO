@@ -1,0 +1,10 @@
+https://wiki.archlinux.org/index.php/Desktop_entries
+
+
+
+[Desktop Entry]
+Type=Application
+Name=asmr
+Icon=/home/pi/Desktop/ASMR2Go/ASMR2Go/img/8.jpg
+Exec=/home/pi/build-asmr-Desktop-Debug/asmr
+Terminal=false
