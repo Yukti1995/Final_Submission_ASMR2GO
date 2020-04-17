@@ -5,4 +5,4 @@ Yukti Behal.
 Mohit Gohil.
 Manush Patel
 
-![alt text(https://github.com/PatelManush/Final_Submission_ASMR2GO/blob/master/Hardware/Display/ASMR%20Device.jpg?raw=true)
+![alt text](https://github.com/PatelManush/Final_Submission_ASMR2GO/blob/master/Hardware/Display/ASMR%20Device.jpg?raw=true)
