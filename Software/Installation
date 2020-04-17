@@ -1,0 +1,16 @@
+#follow the websit link to download the setup first
+
+https://www.qt.io/
+#it will detet your system automatically and suggest the appropriate binary to install in my case
+#OS: Linux
+#Installer: QT online installer(64-bit)
+
+#download the file 
+#save it in your pwd or just simply open the contained folder
+
+#terminal
+
+chmod +x qt-unified-linux-x64-3.2.2-online.run
+./qt-unified-linux-x64-3.2.2-online.run
+
+#requires g++ and build essentials
