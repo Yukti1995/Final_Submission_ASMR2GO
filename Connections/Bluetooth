@@ -1,3 +1,5 @@
+#guidelines from official raspberry pi forums https://www.raspberrypi.org/forums/viewtopic.php?t=235519
+
 sudo apt-get install pulseaudio
 sudo apt-get install pulseaudio-module-bluetooth
 
@@ -11,6 +13,11 @@ $bluetooth: dicoverable on
 $bluetooth: pairable on
 $bluetooth: agent on
 $bluetooth: quit
+
+#in main terminal start pulseaudio
+pulseaudio --start
+
+
 
 
 
