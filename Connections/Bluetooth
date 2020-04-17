@@ -17,6 +17,8 @@ $bluetooth: quit
 #in main terminal start pulseaudio
 pulseaudio --start
 
+#can also be configured for an auto start on boot up
+raspi-config
 
 
 
