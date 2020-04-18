@@ -1,11 +1,9 @@
+#include "mainwindow.h"
+#include "ui_mainwindow.h"
 
-#include "asmr.h"
-#include "ui_asmr.h"
-#include <QApplication>
-
-ASMR::ASMR(QWidget *parent) :
+MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::ASMR)
+    ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
     QMainWindow::showFullScreen();
@@ -31,10 +29,9 @@ ASMR::ASMR(QWidget *parent) :
 
 }
 
-ASMR::~ASMR()
+MainWindow::~MainWindow()
 {
     delete ui;
 }
-
 
 
