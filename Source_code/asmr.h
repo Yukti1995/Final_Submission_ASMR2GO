@@ -1,26 +1,26 @@
-#ifndef ASMR_H // Defined by default
-#define ASMR_H
+#ifndef MAINWINDOW_H // Defined by default
+#define MAINWINDOW_H
 
 #include <QMainWindow>//Library to build main window
 #include <QMediaPlayer> //Library to play music
 #include <QMediaPlaylist>//Library to interface with other devices
 #include <QAudioRecorder> //Library to record music
-#include "ui_asmr.h" //header to generate .ui file for home page QT5 wizard generation
+#include "ui_mainwindow.h" //header to generate .ui file for home page QT5 wizard generation
 
 namespace Ui {
-class ASMR;
+class MainWindow;
 }
 
-class ASMR : public QMainWindow // Links the program to the main GUI window 
+class MainWindow : public QMainWindow // Links the program to the main GUI window 
 {
     Q_OBJECT
 
 public:
-    explicit ASMR(QWidget *parent = nullptr);
-    ~ASMR();
+    explicit MainWindow(QWidget *parent = nullptr);
+    ~MainWindow();
 
 private: //functions can be accessed only inside the class
-    Ui::ASMR *ui;
+    Ui::MainWindow *ui;
     QAudioRecorder *a_recorder1 = nullptr;
     QAudioRecorder *a_recorder2 = nullptr;
     QAudioRecorder *a_recorder3 = nullptr;
@@ -54,7 +54,7 @@ private slots:
             audioSettings.setCodec("audio/amr");// amr , audio compression format for live speech signals 
             audioSettings.setQuality(QMultimedia::HighQuality);
             a_recorder1->setEncodingSettings(audioSettings);
-            a_recorder1->setOutputLocation(QUrl::fromLocalFile("/home/max/song1.amr")); // this is the output location.
+            a_recorder1->setOutputLocation(QUrl::fromLocalFile("/home/pi/Music/song1.amr")); // this is the output location.
             a_recorder1->record();
             break;
             //
@@ -73,7 +73,7 @@ private slots:
             audioSettings.setCodec("audio/amr");
             audioSettings.setQuality(QMultimedia::HighQuality);
             a_recorder2->setEncodingSettings(audioSettings);
-            a_recorder2->setOutputLocation(QUrl::fromLocalFile("/home/max/song2.amr"));
+            a_recorder2->setOutputLocation(QUrl::fromLocalFile("/home/pi/Music/song2.amr"));
             a_recorder2->record();
             break;
             //
@@ -92,7 +92,7 @@ private slots:
             audioSettings.setCodec("audio/amr");
             audioSettings.setQuality(QMultimedia::HighQuality);
             a_recorder3->setEncodingSettings(audioSettings);
-            a_recorder3->setOutputLocation(QUrl::fromLocalFile("/home/max/song3.amr"));
+            a_recorder3->setOutputLocation(QUrl::fromLocalFile("/home/pi/Music/song3.amr"));
             a_recorder3->record();
             break;
             //
@@ -111,7 +111,7 @@ private slots:
             audioSettings.setCodec("audio/amr");
             audioSettings.setQuality(QMultimedia::HighQuality);
             a_recorder4->setEncodingSettings(audioSettings);
-            a_recorder4->setOutputLocation(QUrl::fromLocalFile("/home/max/song4.amr"));
+            a_recorder4->setOutputLocation(QUrl::fromLocalFile("/home/pi/Music/song4.amr"));
             a_recorder4->record();
             break;
             //
@@ -131,7 +131,7 @@ private slots:
         case QMediaPlayer::PausedState:
         case QMediaPlayer::StoppedState:
             QMediaPlaylist *playlist = new QMediaPlaylist();//to assign the voice recorded in rec1() object 
-            playlist->addMedia(QUrl::fromLocalFile("/home/max/song1.amr")); //output where the object has to take extract it media from 
+            playlist->addMedia(QUrl::fromLocalFile("/home/pi/Music/song1.amr")); //output where the object has to take extract it media from 
             playlist->setPlaybackMode(QMediaPlaylist::Loop); // playing the voice in a loop until the button is pressed
             m_player1 = new QMediaPlayer;// assigning playlist as a new media player object player to keep playing and avoiding device conncetion problems 
             m_player1->setPlaylist(playlist);
@@ -153,7 +153,7 @@ private slots:
         case QMediaPlayer::PausedState:
         case QMediaPlayer::StoppedState:
             QMediaPlaylist *playlist = new QMediaPlaylist();
-            playlist->addMedia(QUrl::fromLocalFile("/home/max/song2.amr"));
+            playlist->addMedia(QUrl::fromLocalFile("/home/pi/Music/song2.amr"));
             playlist->setPlaybackMode(QMediaPlaylist::Loop);
             m_player2 = new QMediaPlayer;
             m_player2->setPlaylist(playlist);
@@ -175,7 +175,7 @@ private slots:
         case QMediaPlayer::PausedState:
         case QMediaPlayer::StoppedState:
             QMediaPlaylist *playlist = new QMediaPlaylist();
-            playlist->addMedia(QUrl::fromLocalFile("/home/max/song3.amr"));
+            playlist->addMedia(QUrl::fromLocalFile("/home/pi/Music/song3.amr"));
             playlist->setPlaybackMode(QMediaPlaylist::Loop);
             m_player3= new QMediaPlayer;
             m_player3->setPlaylist(playlist);
@@ -197,7 +197,7 @@ private slots:
         case QMediaPlayer::PausedState:
         case QMediaPlayer::StoppedState:
             QMediaPlaylist *playlist = new QMediaPlaylist();
-            playlist->addMedia(QUrl::fromLocalFile("/home/max/song4.amr"));
+            playlist->addMedia(QUrl::fromLocalFile("/home/pi/Music/song4.amr"));
             playlist->setPlaybackMode(QMediaPlaylist::Loop);
             m_player4 = new QMediaPlayer;
             m_player4->setPlaylist(playlist);
@@ -219,7 +219,7 @@ private slots:
         case QMediaPlayer::PausedState:
         case QMediaPlayer::StoppedState:
             QMediaPlaylist *playlist = new QMediaPlaylist();
-            playlist->addMedia(QUrl::fromLocalFile("/home/manush/Documents/yukti/audio_files/Catspurr.mp3"));
+            playlist->addMedia(QUrl::fromLocalFile("/home/pi/Music/song1.mp3"));
             playlist->setPlaybackMode(QMediaPlaylist::Loop);
             m_player5 = new QMediaPlayer;
             m_player5->setPlaylist(playlist);
@@ -240,7 +240,7 @@ private slots:
             case QMediaPlayer::PausedState:
             case QMediaPlayer::StoppedState:
                 QMediaPlaylist *playlist = new QMediaPlaylist();
-                playlist->addMedia(QUrl::fromLocalFile("/home/manush/Documents/yukti/audio_files/Leaves.mp3"));
+                playlist->addMedia(QUrl::fromLocalFile("/home/pi/Music/song2.mp3"));
                 playlist->setPlaybackMode(QMediaPlaylist::Loop);
                 m_player6 = new QMediaPlayer;
                 m_player6->setPlaylist(playlist);
@@ -262,7 +262,7 @@ private slots:
             case QMediaPlayer::PausedState:
             case QMediaPlayer::StoppedState:
                 QMediaPlaylist *playlist = new QMediaPlaylist();
-                playlist->addMedia(QUrl::fromLocalFile("/home/manush/Documents/yukti/Final_Submission_ASMR2GO/Software/Sound_processing/Sound_samples/Snowstorm.mp3"));
+                playlist->addMedia(QUrl::fromLocalFile("/home/pi/Music/song3.mp3"));
                 playlist->setPlaybackMode(QMediaPlaylist::Loop);
                 m_player7= new QMediaPlayer;
                 m_player7->setPlaylist(playlist);
@@ -283,7 +283,7 @@ private slots:
             case QMediaPlayer::PausedState:
             case QMediaPlayer::StoppedState:
                 QMediaPlaylist *playlist = new QMediaPlaylist();
-                playlist->addMedia(QUrl::fromLocalFile("/home/manush/Documents/yukti/Final_Submission_ASMR2GO/Software/Sound_processing/Sound_samples/Pebbles.mp3"));
+                playlist->addMedia(QUrl::fromLocalFile("/home/pi/Music/song4.mp3"));
                 playlist->setPlaybackMode(QMediaPlaylist::Loop);
                 m_player8 = new QMediaPlayer;
                 m_player8->setPlaylist(playlist);
@@ -294,6 +294,4 @@ private slots:
             }
         }
 
-#endif // ASMR_H
-
-
+#endif //  MAINWINDOW_H
