@@ -15,7 +15,8 @@ Qt Creator, is a C++ cross-platform for developing multimedia GUI application. W
 
 
 # ASMR -Physiological and Stress Reducing Benefits
-![1_87R4BLVWtqjOPSAvHKLe9g](https://user-images.githubusercontent.com/55197733/79084596-91ef3100-7d02-11ea-9721-6c1a7408bfa7.jpeg)
+![fig-4-2x](https://user-images.githubusercontent.com/55197733/79938363-67038c00-842a-11ea-91db-cd3c91a63a00.jpg)
+
 
 
 
