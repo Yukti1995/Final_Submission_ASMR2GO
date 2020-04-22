@@ -1,13 +1,16 @@
 # Final_Submission_ASMR2go
 Capstone project to help people reduce stress levels, improve insomnia and mood by live recording and playing of Autonomous Sensory Meridian Responsive voices. ASMR is an brain-tingling feeling and hence our initiative is to bring this model for people to have greater access to this experience and can overcome insomnia. 
                                         
-                                          ASMR Abbreviation 
+# ASMR Abbreviation 
     # Autonomous(A) - 
   Spontaneous, self-governing, with or without control , 
+  
     # Sensory(S) – 
   Pertaining to the senses or sensation, 
+  
     # Meridian(M) – 
   Signifying a peak, climax, or point of highest development, 
+  
     # Response(R) – 
   Referring to an experience triggered by something external or internal.
 
