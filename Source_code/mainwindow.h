@@ -51,7 +51,7 @@ private slots:
                 //with an adaptive Multi Rate format the object rec_1 on pushing it starts to record 
         case QAudioRecorder::StoppedState:
             QAudioEncoderSettings audioSettings;
-            audioSettings.setCodec("audio/amr");// amr , audio compression format for live speech signals 
+            audioSettings.setCodec("audio/x-flac");// amr , audio compression format for live speech signals 
             audioSettings.setQuality(QMultimedia::HighQuality);
             a_recorder1->setEncodingSettings(audioSettings);
             a_recorder1->setOutputLocation(QUrl::fromLocalFile("/home/pi/Music/song1.amr")); // this is the output location.
@@ -70,7 +70,7 @@ private slots:
         case QAudioRecorder::PausedState:
         case QAudioRecorder::StoppedState:
             QAudioEncoderSettings audioSettings;
-            audioSettings.setCodec("audio/amr");
+            audioSettings.setCodec("audio/x-flac");
             audioSettings.setQuality(QMultimedia::HighQuality);
             a_recorder2->setEncodingSettings(audioSettings);
             a_recorder2->setOutputLocation(QUrl::fromLocalFile("/home/pi/Music/song2.amr"));
@@ -89,7 +89,7 @@ private slots:
         case QAudioRecorder::PausedState:
         case QAudioRecorder::StoppedState:
             QAudioEncoderSettings audioSettings;
-            audioSettings.setCodec("audio/amr");
+            audioSettings.setCodec("audio/x-flac");
             audioSettings.setQuality(QMultimedia::HighQuality);
             a_recorder3->setEncodingSettings(audioSettings);
             a_recorder3->setOutputLocation(QUrl::fromLocalFile("/home/pi/Music/song3.amr"));
@@ -108,7 +108,7 @@ private slots:
         case QAudioRecorder::PausedState:
         case QAudioRecorder::StoppedState:
             QAudioEncoderSettings audioSettings;
-            audioSettings.setCodec("audio/amr");
+            audioSettings.setCodec("audio/x-flac");
             audioSettings.setQuality(QMultimedia::HighQuality);
             a_recorder4->setEncodingSettings(audioSettings);
             a_recorder4->setOutputLocation(QUrl::fromLocalFile("/home/pi/Music/song4.amr"));
