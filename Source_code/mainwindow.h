@@ -51,7 +51,7 @@ private slots:
                 //with an adaptive Multi Rate format the object rec_1 on pushing it starts to record 
         case QAudioRecorder::StoppedState:
             QAudioEncoderSettings audioSettings;
-            audioSettings.setCodec("audio/x-flac");// amr , audio compression format for live speech signals 
+            audioSettings.setCodec("audio/x-flac");// Free Lossless Audio Codec, similar to mp3 without any attenuation
             audioSettings.setQuality(QMultimedia::HighQuality);
             a_recorder1->setEncodingSettings(audioSettings);
             a_recorder1->setOutputLocation(QUrl::fromLocalFile("/home/pi/Music/song1.amr")); // this is the output location.
