@@ -21,3 +21,4 @@ Source,   https://doc.qt.io/qt-5/multimediaoverview.html
 
 
 sudo apt-get install qtmultimedia5-dev libqt5mediaqwidgets5 libqt5multimedia5-plugins libqt5multimedia5
+sudo apt-get install libtqt5libname5-dev
