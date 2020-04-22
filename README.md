@@ -11,7 +11,7 @@ Qt Creator, is a C++ cross-platform for developing multimedia GUI application. W
 ![1_87R4BLVWtqjOPSAvHKLe9g](https://user-images.githubusercontent.com/55197733/79084596-91ef3100-7d02-11ea-9721-6c1a7408bfa7.jpeg)
 
 
-# ASMR- Abbreviation
+# ASMR ,Autonomous – spontaneous, self-governing, with or without control , Sensory – pertaining to the senses or sensation, Meridian – signifying a peak, climax, or point of highest development, Response – referring to an experience triggered by something external or internal
 ![adcb8faab15e0826d57e78c13974a40b](https://user-images.githubusercontent.com/55197733/78729725-c0d36480-7908-11ea-989f-796579defbc7.jpg)
 
 
