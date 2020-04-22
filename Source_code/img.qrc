@@ -1,0 +1,11 @@
+// Image resources of the application
+
+<RCC>
+    <qresource prefix="/img">
+        <file>img/asmr.png</file>
+        <file>img/del.png</file>
+        <file>img/play.png</file>
+        <file>img/reset.png</file>
+        <file>img/dot.png</file>
+    </qresource>
+</RCC>
