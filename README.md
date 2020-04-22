@@ -16,11 +16,9 @@ Qt Creator, is a C++ cross-platform for developing multimedia GUI application. W
 
                         First look of ASMR2go GUI in Qt Creator -- Live Recording and Playing 
  
-# Average ASMR rating for participants in a group, following each clip type.
-![fig-4-2x](https://user-images.githubusercontent.com/55197733/79938363-67038c00-842a-11ea-91db-cd3c91a63a00.jpg)
+![How-You-Can-Use-Sound-And-Music-To-Change-Your-Brain-Waves-With-Laser-Accuracy-And-Achieve-Huge-Focus-And-Performance-Gains-1](https://user-images.githubusercontent.com/55197733/79948782-80183700-8442-11ea-8052-4934262d5ed9.png)
 
-                      Source: Cash, D. K., Heisick, L. L., & Papesh, M. H. (2018). Expectancy 
-                              effects in the autonomous sensory meridian response. PeerJ,6,e5229.
+
 
 
 
