@@ -16,7 +16,7 @@ Qt Creator, is a C++ cross-platform for developing multimedia GUI application. W
 # Average ASMR rating for participants in a group, following each clip type.
 ![fig-4-2x](https://user-images.githubusercontent.com/55197733/79938363-67038c00-842a-11ea-91db-cd3c91a63a00.jpg)
 
-Source: Expectancy effects in the Autonomous Sensory Meridian Response
+                      Source: Expectancy effects in the Autonomous Sensory Meridian Response
 
 
 
