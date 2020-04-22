@@ -52,7 +52,7 @@ private slots:
         case QAudioRecorder::StoppedState:
             QAudioEncoderSettings audioSettings;
             audioSettings.setCodec("audio/x-flac");// Free Lossless Audio Codec, similar to mp3 without any attenuation
-            audioSettings.setQuality(QMultimedia::HighQuality);
+            audioSettings.setQuality(QMultimedia::HighQuality);//setting quality to high definition.
             a_recorder1->setEncodingSettings(audioSettings);
             a_recorder1->setOutputLocation(QUrl::fromLocalFile("/home/pi/Music/song1.amr")); // this is the output location.
             a_recorder1->record();
@@ -208,12 +208,12 @@ private slots:
         }
 
     }
-    void playMusic5()
+    void playMusic5() // these are the prerecorded files// 
     {
         switch (m_player5->state()) {
         case QMediaPlayer::PlayingState:
             m_player5->stop();
-            ui->pushbutton_5->setText("1");
+            ui->pushbutton_5->setText("1"); // the push button will display as 1 when the file is running//
             break;
             //
         case QMediaPlayer::PausedState:
