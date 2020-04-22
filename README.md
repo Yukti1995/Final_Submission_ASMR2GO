@@ -1,5 +1,5 @@
 # Final_Submission_ASMR2go
-    Capstone project to help people reduce stress levels, improve insomnia and mood by live recording and playing of               Autonomous Sensory Meridian Responsive voices. ASMR is an brain-tingling feeling and hence our initiative is to bring this     model for people to have greater access to this experience and can overcome insomnia. 
+  Capstone project to help people reduce stress levels, improve insomnia and mood by live recording and playing of               Autonomous Sensory Meridian Responsive voices. ASMR is an brain-tingling feeling and hence our initiative is to bring this     model for people to have greater access to this experience and can overcome insomnia. 
                                         
 # ASMR Abbreviation 
     Autonomous(A) - Spontaneous, self-governing, with or without control , 
@@ -11,7 +11,9 @@
     Response(R) –  Referring to an experience triggered by something external or internal.
 
  # Design Implementation - Accomplished in Qt Creator (C++)
-    Qt Creator, is a C++ cross-platform for developing multimedia GUI application. We compile the C++ code as well as design       the  GUI app simultaneously for ASMR2go live recording and playing mechanism.
+  Qt Creator, is a C++ cross-platform for developing multimedia GUI application. We compile the C++ code as well as design       the  GUI app simultaneously for ASMR2go live recording and playing mechanism.
+  
+  
 ![Screenshot from 2020-04-07 23-13-05](https://user-images.githubusercontent.com/55197733/78741284-eff8ce80-7926-11ea-8ea5-54ca5b4e7f71.png) 
 
                         First look of ASMR2go GUI in Qt Creator -- Live Recording and Playing 
