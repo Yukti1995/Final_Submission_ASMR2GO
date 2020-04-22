@@ -12,10 +12,11 @@ Capstone project to help people reduce stress levels, improve insomnia and mood 
 # Design Implementation 
 Qt Creator, is a C++ cross-platform for developing multimedia GUI application. We compile the C++ code as well as design the  GUI app simultaneously for ASMR2go live recording and playing mechanism.
 ![Screenshot from 2020-04-07 23-13-05](https://user-images.githubusercontent.com/55197733/78741284-eff8ce80-7926-11ea-8ea5-54ca5b4e7f71.png) 
-
-
-# ASMR -Physiological and Stress Reducing Benefits
+ 
+# Average ASMR rating for participants in a group, following each clip type.
 ![fig-4-2x](https://user-images.githubusercontent.com/55197733/79938363-67038c00-842a-11ea-91db-cd3c91a63a00.jpg)
+
+Source: Expectancy effects in the Autonomous Sensory Meridian Response
 
 
 
