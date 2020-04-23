@@ -58,7 +58,7 @@ static QVector<qreal> getBufferLevels(const T *buffer, int frames, int channels)
 AudioRecorder::AudioRecorder()
     : ui(new Ui::AudioRecorder)
 {
-    ui->setupUi(this);
+    ui->setupUi(this); // Setting up link between user interface//
 
     m_audioRecorder = new QAudioRecorder(this);
     m_probe = new QAudioProbe(this);
